@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="safari"/>
+  <test thread-count="5" name="Smoke Test Suite Chrome(failed)">
+    <classes>
+      <class name="LearningTestNG.TC_Facebook">
+        <methods>
+          <include name="test001"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- LearningTestNG.TC_Facebook -->
+    </classes>
+  </test> <!-- Smoke Test Suite Chrome(failed) -->
+  <test thread-count="5" name="Smoke Test Suite firefox(failed)">
+    <classes>
+      <class name="LearningTestNG.TC_Facebook">
+        <methods>
+          <include name="test001"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- LearningTestNG.TC_Facebook -->
+    </classes>
+  </test> <!-- Smoke Test Suite firefox(failed) -->
+  <test thread-count="5" name="Smoke Test Suite safari(failed)">
+    <classes>
+      <class name="LearningTestNG.TC_Facebook">
+        <methods>
+          <include name="test001"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- LearningTestNG.TC_Facebook -->
+    </classes>
+  </test> <!-- Smoke Test Suite safari(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

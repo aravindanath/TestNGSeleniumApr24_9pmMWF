@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="Browser" value="chrome">
+    <test verbose="2" preserve-order="true"
+          name="Smoke Test Suite Chrome">
+        <classes>
+            <class name="LearningTestNG.TC_Facebook"/>
+            <class name="LearningTestNG.TC_Google1"/>
+            <class name="LearningTestNG.TC_Flipkart1"/>
+        </classes>
+    </test>
+    </parameter>
+    <parameter name="Browser" value="firefox">
+        <test verbose="2" preserve-order="true"
+              name="Smoke Test Suite firefox">
+            <classes>
+                <class name="LearningTestNG.TC_Facebook"/>
+                <class name="LearningTestNG.TC_Google1"/>
+                <class name="LearningTestNG.TC_Flipkart1"/>
+            </classes>
+        </test>
+    </parameter>
+    <parameter name="Browser" value="safari">
+        <test verbose="2" preserve-order="true"
+              name="Smoke Test Suite safari">
+            <classes>
+                <class name="LearningTestNG.TC_Facebook"/>
+                <class name="LearningTestNG.TC_Google1"/>
+                <class name="LearningTestNG.TC_Flipkart1"/>
+            </classes>
+        </test>
+    </parameter>
+</suite>
