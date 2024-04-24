@@ -2,6 +2,7 @@ package LearningTestNG;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
@@ -14,8 +15,11 @@ public class BaseTestNew {
     String browser = "chrome";
     @BeforeClass
     public void setup(){
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("incognito");
+//        options.addArguments("--headless");
         if(browser.equalsIgnoreCase("chrome")){
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
         }else if(browser.equalsIgnoreCase("firefox")){
             driver = new FirefoxDriver();
         }else if(browser.equalsIgnoreCase("Safari")){

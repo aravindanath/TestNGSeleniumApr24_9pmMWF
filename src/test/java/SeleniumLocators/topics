@@ -7,3 +7,17 @@ partial link text
 tagname
 xpath
 css
+
+
+//tagName[@attribute='value']
+//tagName[@attribute='value' or @attribute='value' ]
+//tagName[@attribute='value' and @attribute='value' ]
+//tagName[text()='value']
+//tagName[starts-with(text(),'value')]
+//tagName[contains(text(),'value')]
+//tagName[contains(@attribure,'value')]
+// following
+// preceeding
+
+
+https://the-internet.herokuapp.com/tables
