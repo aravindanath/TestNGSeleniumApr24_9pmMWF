@@ -19,5 +19,38 @@ css
 // following
 // preceeding
 
+# id
+. class
+^ starts-with
+* contains
+$ Ends with
+
+tagName[attribute='value']
+tagName[attribute^='value']
+tagName[attribute*='value']
+tagName[attribute$='value']
+
+
 
 https://the-internet.herokuapp.com/tables
+
+Selenium Builtin methods --Done
+dropdown
+radio buttons
+check box
+autosuggestions --Done
+calenders
+mutiselect
+waits
+scroll
+action classs mouse hover, drag and drop, right click
+taking screenshot
+extent reports
+frames
+window handling
+file upload
+file download
+alerts
+
+
+Frameworks

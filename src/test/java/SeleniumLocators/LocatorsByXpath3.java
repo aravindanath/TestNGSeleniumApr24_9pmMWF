@@ -15,8 +15,13 @@ public class LocatorsByXpath3 extends BaseTestNew {
 
         // gold,asdfasdf,,adsfasdf
 
-       String x =  driver.findElement(By.xpath("//table[@class='curDerivatives_web_commontable__NT0j9']/tbody/tr/td/h4[contains(text(),'SILVER')]//following::td[1]")).getText();
+        String [] commodities =  {"GOLD","CRUDE","COPPER","SILVER","NATURALGAS"};
 
-       System.out.println("Silver: "+ x);
+        for(String com : commodities){
+            String x =  driver.findElement(By.xpath("//table[@class='curDerivatives_web_commontable__NT0j9']/tbody/tr/td/h4[contains(text(),'"+com+"')]//following::td[1]")).getText();
+            System.out.println(com+": "+ x);
+        }
+
+
     }
 }
