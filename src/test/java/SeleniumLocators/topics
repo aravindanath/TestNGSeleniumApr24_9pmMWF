@@ -35,14 +35,15 @@ tagName[attribute$='value']
 https://the-internet.herokuapp.com/tables
 
 Selenium Builtin methods --Done
-dropdown
-radio buttons
-check box
 autosuggestions --Done
+
+dropdown
+radio buttons -- done
+check box -- done
 calenders
-mutiselect
+mutiselect -- done
 waits
-scroll
+scroll -- done
 action classs mouse hover, drag and drop, right click
 taking screenshot
 extent reports

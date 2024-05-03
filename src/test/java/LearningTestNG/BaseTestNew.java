@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import java.time.Duration;
+
 public class BaseTestNew {
 
    protected WebDriver driver;
@@ -27,6 +29,7 @@ public class BaseTestNew {
         }
 
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
     }
 
     @AfterClass
