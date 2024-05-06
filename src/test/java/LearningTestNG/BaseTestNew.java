@@ -18,7 +18,7 @@ public class BaseTestNew {
     @BeforeClass
     public void setup(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("incognito");
+     //   options.addArguments("incognito");
 //        options.addArguments("--headless");
         if(browser.equalsIgnoreCase("chrome")){
             driver = new ChromeDriver(options);

@@ -36,22 +36,23 @@ https://the-internet.herokuapp.com/tables
 
 Selenium Builtin methods --Done
 autosuggestions --Done
-
-dropdown
+dropdown --Done
 radio buttons -- done
 check box -- done
-calenders
+file upload -- done
+file download -- done
 mutiselect -- done
-waits
 scroll -- done
+
 action classs mouse hover, drag and drop, right click
 taking screenshot
 extent reports
+calenders
 frames
-window handling
-file upload
-file download
 alerts
+window handling
+waits
+
 
 
 Frameworks
