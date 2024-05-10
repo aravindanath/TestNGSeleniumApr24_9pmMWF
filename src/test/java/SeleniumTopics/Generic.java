@@ -3,6 +3,7 @@ package SeleniumTopics;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Generic
@@ -44,4 +45,24 @@ public class Generic
         select.deselectByIndex(value);
     }
 
+    public static void moouseHover(WebDriver driver,WebElement element){
+        Actions act = new Actions(driver);
+        act.moveToElement(element).perform();
+    }
+
+    public static void click(WebDriver driver, WebElement element){
+        Actions act = new Actions(driver);
+        act.click(element).perform();
+    }
+
+
+    public static void dragAndDrop(WebDriver driver, WebElement element1, WebElement element2){
+        Actions act = new Actions(driver);
+        act.dragAndDrop(element1,element2).perform();
+    }
+
+    public static void rightClck(WebDriver driver){
+        Actions act = new Actions(driver);
+        act.contextClick().perform();
+    }
 }
