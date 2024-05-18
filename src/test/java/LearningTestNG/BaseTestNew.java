@@ -18,7 +18,7 @@ public class BaseTestNew {
     @BeforeClass
     public void setup(){
         ChromeOptions options = new ChromeOptions();
-     //   options.addArguments("incognito");
+        options.addArguments("incognito");
 //        options.addArguments("--headless");
         if(browser.equalsIgnoreCase("chrome")){
             driver = new ChromeDriver(options);
@@ -29,12 +29,12 @@ public class BaseTestNew {
         }
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
     }
 
     @AfterClass
     public void tearDown() throws InterruptedException {
         Thread.sleep(5000);
-        driver.close();
+        driver.quit();
     }
 }

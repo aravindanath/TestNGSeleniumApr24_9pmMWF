@@ -45,11 +45,12 @@ mutiselect -- done
 scroll -- done
 
 action classs mouse hover, drag and drop, right click --done
-calenders
 frames -- done
-alerts
-window handling
-waits
+
+alerts -- done
+window handling -- done
+waits -- done
+calenders -- done
 
 extent reports
 taking screenshot
